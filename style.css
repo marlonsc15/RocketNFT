@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+:root {
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+}
+
+body::-webkit-scrollbar {
+    width: 10px;            
+}
+  
+body::-webkit-scrollbar-track {
+    background: #0e0e0e;  
+    border: 2px solid white;
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-logo);    
+}
+
+
+/* HEADER */
+
+header {
+    background: url(assets/background.png);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header .cabecalho {
+    display: flex;
+    padding: 5% 5% 5% 5%;
+}
+
+header ul {
+    padding-left: 8%;
+    width: 100%;
+    display: flex; 
+    
+}
+
+header ul li {
+    padding: 2% 2% 1% 2%;
+    list-style: none;
+    margin-right: 5%;
+    transition: all .5s ease-in-out;
+}
+
+header ul li:hover {
+    cursor: pointer;
+    background:  #ff5c5098;
+    border-radius: 5px;
+}
+
+header a {
+    border-radius: 3px;
+    width: 35%;
+    font-weight: 700;
+    background: var(--text-color);
+    color: var(--black-text);  
+    text-decoration: none;
+    align-items: center; 
+    display: flex;
+    transition: all .2s ease;
+    
+}
+
+header a:hover {
+    border: 1px solid var(--color-logo);
+    color: var(--color-logo);
+}
+
+header a img {
+    padding-left: 10%;
+    padding-right: 2%; 
+}
+
+header .headerG {
+    padding: 0% 5% 0% 5%;
+    display: flex;
+}
+
+.span{
+    color: var(--color-logo);
+}
+
+.header1 {
+    width: 40%;
+}
+
+header .header1 p {
+    padding-bottom: 3%;
+    padding-right: 8%;
+}
+
+header .avatars {
+    display: flex; 
+    align-items: center;   
+}
+header .avatars p {
+    padding-top: 14%;
+    padding-left: 2%;
+}
+
+header .header2 {
+    width: 40%;
+}
+
+header .header3 {
+    padding-left: 5%;
+    
+    
+}
+
+header .img-header  {
+    padding: 5% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header .img-header img {
+    border: 1px solid var(--text-color);
+    width: 95%;
+    margin-bottom: 18%;
+}
+
+
+/* MAIN */
+
+
+main {
+    background: var(--body-background);
+}
+
+main .vendas {
+    display: flex;
+    width: 100%;
+}
+
+main .vendas .numeros {
+    background: red;
+    width: 50%;
+    text-align: right;
+}
+
+main .vendas .secTextos {
+    background: blue;
+}
+
+main .vendas .secTextos .secP {
+    display: flex;
+}
