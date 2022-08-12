@@ -4,3 +4,4 @@ function troca() {
     music.play();
     music.currentTime = 0.4;  
 }
+
