@@ -18,6 +18,10 @@
     color: var(--text-color);
 }
 
+body,html {
+    background: var(--card-color);
+}
+
 body::-webkit-scrollbar {
     width: 10px;            
 }
@@ -77,6 +81,7 @@ header a {
     align-items: center; 
     display: flex;
     transition: all .2s ease;
+    margin-right: 1.2%;
     
 }
 
@@ -121,10 +126,11 @@ header .avatars p {
 
 header .header2 {
     width: 40%;
+    font-weight: 700;
 }
 
 header .header3 {
-    padding-left: 5%;   
+    padding-left: 2%;   
 }
 
 /* HEADER IMAGENS */
@@ -136,24 +142,32 @@ header .img-header  {
 }
 
 header .img-header img {
-    border: 1px solid var(--text-color);
+    border: 2px solid var(--text-color);
     width: 95%;
     margin-bottom: 18%;
+    transition: all .6s ease;
+
 }
 
+header .img-header img:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-logo);
+
+}
 
 /* MAIN */
-
-/* MAIN VENDAS */
 
 main {
     background: var(--body-background);
 }
 
+/* MAIN VENDAS */
+
 main .vendas {
     display: flex;
     width: 100%;
     padding: 0 5% 0 5%;
+    border-bottom: 1px solid var(--subtitle-color);
 }
 
 main .vendas .numeros {
@@ -161,7 +175,6 @@ main .vendas .numeros {
     width: 20%;
     text-align: left;
     border-right: 1px solid var(--subtitle-color);
-    border-bottom: 1px solid var(--subtitle-color);
 }
 
 main .vendas .numeros h1 {
@@ -205,12 +218,26 @@ main .vendas .secTextos .secI img {
 
 main .popularesH1 {
     padding: 5%;
+    font-size: 3em;
+    font-weight: 700;
 }
 
 main .populares {
     display: flex;
     padding: 5%;
 }
+
+main .populares .imgP {
+    border: 2px solid var(--body-background);
+    transition: all .6s ease;
+}
+
+main .populares .imgP:hover {
+    cursor: pointer;
+    border: 2px solid var(--color-logo);
+}
+
+
 
 main .ladoA {
     width: 50%;
@@ -260,4 +287,193 @@ main .ladoB .arrowW{
 
 /* ARTISTAS */
 
+main .melhoresH1 {
+    text-align: center;
+    margin: 5%;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+main .artistas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    padding: 5%;
+}
+
+main .artistas .artistasF {
+    display: flex;
+    align-items: center;
+    background: var(--card-color);
+    width: 20em;
+    height: 9em;
+    margin-bottom: 20%;
+    margin-right: 7.5em;
+    font-weight: 500;
+    transition: all .6s ease;
+}
+
+main .artistas .artistasF:hover {
+    cursor: pointer;
+    background: var(--color-logo);
+}
+
+main .artistas .artistasF:hover .span {
+    color: var(--text-color);
+}
+
+main .artistas .artistasF img {
+    padding: 5%;
+    padding-right: 15%;
+}
+
+main .artistas .artistasF .nomeF .nomeP {
+    margin-bottom: 1em;
+}
+
+main h4 {
+    margin-top: -3em;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5em;
+}
+
+main h4 img {
+    padding-left: 1%;
+}
+
+/* FOOTER */
+
+
+footer {
+    background: var(--card-color);
+    
+}
+/* FOOTER 1 */
+
+footer .footer1 {
+    padding: 5%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+footer .footer1 a {
+    background: var(--color-logo);
+    width: 4em;
+    height: 4em;
+    margin-right: 1.4%;
+    transition: all .5s ease-out;
+}
+
+footer .footer1 a:hover {
+    background: var(--text-color);
+}
+
+footer .footer1 a img {
+    margin: 31% 10% 0% 33%;
+}
+
+/* FOOTER 2 */
+
+footer .footer2 {
+    display: flex;
+    padding-left: 5%;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+footer .footer2 .email {
+    width: 30%;
+    border-right: 1px solid var(--subtitle-color);
+}
+
+footer .footer2 .email h2 {
+    padding-top: 12%;
+    padding-bottom: 5%;
+}
+
+footer .footer2 .email input {
+    width: 18em;
+    height: 3em;
+    padding-left: 3%;
+    border: none;
+    color: var(--text-color);
+    background: var(--color-input);
+}
+
+footer .footer2 .email button {
+
+    font-weight: 700;
+    height: 3em;
+    width: 5em;
+    color: var(--black-text);
+    background: var(--text-color);
+    border: 1px solid var(--color-input);
+    transition: all .5s ease-out;
+}
+
+footer .footer2 .email button:hover {
+    background: var(--color-logo);
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+}
+
+footer .footer2 .sobre {
+    width: 70%;
+    display: flex;
+}
+
+footer .footer2 .sobre ul {
+    margin: 5%;
+    margin-left: 10%;
+}
+
+footer .footer2 .sobre ul li {
+    list-style: none;
+    margin: 12%;
+    color: var(--subtitle-color);
+}
+
+footer .footer2 .sobre ul li:hover {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+footer .footer2 .sobre .strong {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+/* FOOTER 3 */
+
+footer .footer3 {
+    display: flex;
+    margin: 5%;
+    margin-right: 10.5%;
+    justify-content: space-between;
+}
+
+footer .footer3 a {
+    color: var(--subtitle-color);
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+footer .footer3 a:hover {
+    color: var(--text-color);
+}
+
+footer .footer3 ul {
+    display: flex;
+}
+
+footer .footer3 ul li {
+    list-style: none;
+    margin-right: 17%;
+}
+
+footer .footer3 img:hover {
+    cursor: pointer;
+}
 
